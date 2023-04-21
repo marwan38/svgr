@@ -18,7 +18,7 @@ importers:
         version: 6.0.0(rollup@3.20.2)
       '@svgr/plugin-jsx':
         specifier: workspace:*
-        version: link:packages/plugin-jsx
+        version: link:packages/plugin-url
       '@svgr/plugin-prettier':
         specifier: workspace:*
         version: link:packages/plugin-prettier
@@ -162,6 +162,12 @@ importers:
         specifier: ^7.4.1
         version: 7.4.1
 
+  packages/babel-plugin-url:
+    dependencies:
+      '@babel/core':
+        specifier: ^7.0.0-0
+        version: 7.21.3
+
   packages/babel-preset:
     dependencies:
       '@babel/core':
@@ -199,7 +205,7 @@ importers:
         version: link:../core
       '@svgr/plugin-jsx':
         specifier: workspace:*
-        version: link:../plugin-jsx
+        version: link:../plugin-url
       '@svgr/plugin-prettier':
         specifier: workspace:*
         version: link:../plugin-prettier
@@ -318,6 +324,28 @@ importers:
         specifier: workspace:*
         version: link:../core
 
+  packages/plugin-url:
+    dependencies:
+      '@babel/core':
+        specifier: ^7.21.3
+        version: 7.21.3
+      '@svgr/babel-plugin-url':
+        specifier: workspace:*
+        version: link:../babel-plugin-url
+      '@svgr/hast-util-to-babel-ast':
+        specifier: workspace:*
+        version: link:../hast-util-to-babel-ast
+      svg-parser:
+        specifier: ^2.0.4
+        version: 2.0.4
+    devDependencies:
+      '@svgr/core':
+        specifier: workspace:*
+        version: link:../core
+      '@types/svg-parser':
+        specifier: ^2.0.3
+        version: 2.0.3
+
   packages/rollup:
     dependencies:
       '@babel/core':
@@ -343,7 +371,7 @@ importers:
         version: link:../core
       '@svgr/plugin-jsx':
         specifier: workspace:*
-        version: link:../plugin-jsx
+        version: link:../plugin-url
       '@svgr/plugin-svgo':
         specifier: workspace:*
         version: link:../plugin-svgo
@@ -380,7 +408,7 @@ importers:
         version: link:../core
       '@svgr/plugin-jsx':
         specifier: workspace:*
-        version: link:../plugin-jsx
+        version: link:../plugin-url
       '@svgr/plugin-svgo':
         specifier: workspace:*
         version: link:../plugin-svgo
@@ -430,7 +458,7 @@ packages:
       '@babel/parser': 7.21.4
       '@babel/template': 7.20.7
       '@babel/traverse': 7.21.4
-      '@babel/types': 7.21.3
+      '@babel/types': 7.21.4
       convert-source-map: 1.9.0
       debug: 4.3.4(supports-color@8.1.1)
       gensync: 1.0.0-beta.2
