@@ -18,7 +18,7 @@ importers:
         version: 6.0.0(rollup@3.20.2)
       '@svgr/plugin-jsx':
         specifier: workspace:*
-        version: link:packages/plugin-url
+        version: link:packages/plugin-jsx
       '@svgr/plugin-prettier':
         specifier: workspace:*
         version: link:packages/plugin-prettier
@@ -92,7 +92,7 @@ importers:
   examples/webpack:
     devDependencies:
       '@svgr/webpack':
-        specifier: ^7.0.0
+        specifier: ^7.1.0
         version: link:../../packages/webpack
       html-webpack-plugin:
         specifier: ^5.5.0
@@ -205,7 +205,7 @@ importers:
         version: link:../core
       '@svgr/plugin-jsx':
         specifier: workspace:*
-        version: link:../plugin-url
+        version: link:../plugin-jsx
       '@svgr/plugin-prettier':
         specifier: workspace:*
         version: link:../plugin-prettier
@@ -371,7 +371,7 @@ importers:
         version: link:../core
       '@svgr/plugin-jsx':
         specifier: workspace:*
-        version: link:../plugin-url
+        version: link:../plugin-jsx
       '@svgr/plugin-svgo':
         specifier: workspace:*
         version: link:../plugin-svgo
@@ -408,7 +408,7 @@ importers:
         version: link:../core
       '@svgr/plugin-jsx':
         specifier: workspace:*
-        version: link:../plugin-url
+        version: link:../plugin-jsx
       '@svgr/plugin-svgo':
         specifier: workspace:*
         version: link:../plugin-svgo
